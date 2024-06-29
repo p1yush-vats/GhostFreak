@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flip Cards</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            overflow-x: hidden; /* Hide horizontal scrollbars */
+            background-image: url("images/super.jpg");
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        header {
+            background-color: #343a40;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        header ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        header ul li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        header ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        header ul li a:hover {
+            color: #cccccc;
+        }
+
+        .container {
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 10px;
+        }
+
+        .section {
+            background-color: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            padding: 20px;
+            margin-bottom: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .section:hover {
+            background-color: rgba(235, 88, 88, 0.4);
+        }
+
+        nav {
+            background-color: #312f2f;
+            overflow: hidden;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        nav ul li {
+            float: left;
+        }
+
+        nav ul li a {
+            display: block;
+            font-weight: 1000;
+            color: hsl(0, 100%, 50%);
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+
+        .h {
+            text-align: center;
+            color: red;
+            font-size: 20px;
+            font-weight: bolder;
+        }
+
+        nav ul li a:hover {
+            background-color: #b1aeae;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+            <li><a href="socials.html">Socials</a></li>
+            <li><a href="../user_login.html">logout</a></li>
+        </ul>
+    </nav>
+    <br><br>
+    <div class="container">
+        <section id="blur" class="about-section section">
+            <h2>project detail</h2>
+            <p>"GhostFreak" stands as a testament to the macabre, a comprehensive college project meticulously crafted to
+                enthrall audiences with tales of horror and the supernatural. At its core, the platform is a digital
+                sanctuary, a virtual haven where enthusiasts of the eerie can converge to share, explore, and even
+                contribute their own spine-chilling encounters. The project's intricate framework boasts a robust login
+                authentication system, meticulously engineered with PHP, HTML, CSS, MySQL, and JavaScript, ensuring
+                utmost security and privacy for users. Through its immersive interface, visitors are transported into a
+                world teeming with ghouls, ghosts, and other spectral entities, each narrative meticulously curated to
+                evoke fear and intrigue. Whether delving into the depths of haunted houses or unraveling mysteries of
+                ancient curses, "GhostFreak" offers an unparalleled journey into the unknown.
+
+                What sets "GhostFreak" apart is its emphasis on community engagement. Users aren't just passive
+                spectators; they're active participants, contributing their own ghostly encounters and engaging in
+                discussions with fellow enthusiasts. This collaborative aspect fosters a sense of camaraderie among
+                users, uniting them in their shared fascination with the supernatural. As users navigate through the
+                platform's rich tapestry of stories, they're met with a seamless blend of captivating storytelling and
+                interactive features, each element meticulously designed to heighten the sense of suspense and
+                anticipation. "GhostFreak" isn't just a website; it's an immersive experience—a digital portal to the
+                realms of the unknown, where the line between reality and the supernatural blurs, leaving users
+                captivated and craving more.</p>
+        </section>
+
+        <section id="blur" class="about-section section">
+            <h2>About Me</h2>
+            <p>
+                Greetings! I'm Piyush Vats, currently enrolled in the BCA program at IITM Janakpuri, which is
+                affiliated with Guru Gobind Singh Indraprastha University (IPU).
+            <p>
+                My academic journey includes achieving a commendable 90% in my 12th-grade exams, and now I'm immersed
+                in BCA studies. Alongside my academic pursuits, I harbor a deep passion for programming. I've honed my
+                skills in technical communication, C, HTML, JavaScript, CSS, and Bootstrap.
+            </p>
+            <p>
+                Beyond the classroom, I actively engage in extracurricular activities such as coding competitions,
+                hackathons, and volunteering, which enrich my overall learning experience.
+            </p>
+            <p>
+                For me, learning is a continuous process, and I thrive on exploring new technologies to expand my skill
+                set. I'm eagerly looking forward to applying my knowledge and skills to make meaningful contributions to
+                the tech industry.
+            </p>
+        </section>
+
+        <section id="blur" class="education-section section">
+            <h2>Education</h2>
+            <ul>
+                <li>10th Grade - Completed with 95% marks</li>
+                <li>12th Grade - Completed with 90% marks</li>
+                <li>BCA (Bachelor of Computer Applications) - IITM Janakpuri, IP University, Ongoing</li>
+
+            </ul>
+        </section>
+
+        <section id="blur" class="skills-section section">
+            <h2>Skills</h2>
+            <ul>
+                <li>Technical Communication</li>
+                <li>C Programming</li>
+                <li>HTML</li>
+                <li>JavaScript</li>
+                <li>CSS</li>
+                <li>Bootstrap</li>
+            </ul>
+        </section>
+
+        <section id="blur" class="experience-section section">
+            <h2>Experience</h2>
+            <ul>
+                <li>Participated in coding competitions and hackathons</li>
+                <li>Volunteer work in community projects</li>
+            </ul>
+        </section>
+
+        <section id="blur" class="achievements-section section">
+            <h2>Achievements</h2>
+            <ul>
+                <li>Recognition for academic excellence (12th grade)</li>
+
+            </ul>
+        </section>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Piyush Vats. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

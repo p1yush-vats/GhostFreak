@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flip Cards</title>
+    <link rel="stylesheet" href="st.css">
+    <style>
+        /* Style for the navbar */
+        nav {
+            background-color: #312f2f;
+            overflow: hidden;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        nav ul li {
+            float: left;
+        }
+
+        nav ul li a {
+            display: block;
+            font-weight: 1000;
+            color: hsl(0, 100%, 50%);
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        
+        .h {
+            text-align: center;
+            color: red;
+            font-size: 20px;
+            font-weight: bolder;
+        }
+
+        /* Change color on hover */
+        nav ul li a:hover {
+            background-color: #b1aeae;
+        }
+
+        /* Add flexbox to align items vertically */
+        .card-back {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        /* Add some margin between title and description */
+        .title {
+            margin-bottom: 10px;
+        }
+        .supernatural-img {
+            background: url("./images/supernatural.jpg") center/cover;
+            /* Add other styling properties */
+        }
+
+        .cursed-img {
+            background: url("./images/cursed.jpg") center/cover;
+            /* Add other styling properties */
+        }
+        .ghost-img {
+            background: url("./images/ghost.jpg") center/cover;
+            /* Add other styling properties */
+        }
+        
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+            <li><a href="socials.html">Socials</a></li>
+            <li><a href="../user_login.html">logout</a></li>
+        </ul>
+    </nav><br><br>
+    <div class="h"><h1>Pick Your Poison !!!</h1></div><br><br>
+    <div class="container">
+        <div class="card">
+            <div class="card-front supernatural-img">
+                 
+            </div>
+            <div class="card-back"><a href="supernaturals.html">
+                <div class="content">
+                    <p class="title"><h2>Supernatural Creatures:</h2></p>
+                    <p class="desc">Dive into the lore of vampires, werewolves, witches, and other supernatural beings from folklore and mythology.</p>
+                </div>
+            </a></div>
+        </div>
+
+        
+        <div class="card">
+            <div class="card-front cursed-img">
+                 
+            </div>
+            <div class="card-back"><a href="cursed.html">
+                <div class="content">
+                    <p class="title"><h2>Cursed Objects:</h2></p>
+                    <p class="desc">Discover the stories behind cursed artifacts and haunted objects said to bring misfortune to those who possess them.</p>
+                </div>
+            </a></div>
+        </div>
+
+        <div class="card">
+            <div class="card-front ghost-img">
+                 
+            </div>
+            <div class="card-back"><a href="horror.php">
+                <div class="content">
+                    <p class="title"><h2>Ghost Stories:</h2></p>
+                    <p class="desc">Share spine-chilling tales of ghostly encounters submitted by readers or sourced from folklore.</p>
+                </div>
+            </a></div>
+        </div>
+
+        <div class="card">
+            <div class="card-front occult-img">
+                 
+            </div>
+            <div class="card-back"><a href="https://powerlisting.fandom.com/wiki/Occultism">
+                <div class="content">
+                    <p class="title"><h2>Occult Practices:</h2></p>
+                    <p class="desc">Learn about ancient rituals, dark magic, and occult practices throughout history.</p>
+                </div>
+            </a></div>
+        </div>
+    </div>
+</body>
+
+</html>

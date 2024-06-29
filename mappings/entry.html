@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Project</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-KyZXEAg3QhqLMpG8r+Knujsl7/1L_dstPt3HV5HzF6Gvk/e3s4Wz6iJgD/+ub2oU" crossorigin="anonymous" />
+    <style>
+        body{
+            background-image: url(black.jpg);
+        }
+       .nav-item {
+            transition: transform 0.3s ease; 
+            color: #fc0202;
+        }
+        
+       .nav-item:hover {
+            transform: scale(1.4); 
+            transform: perspective(30deg);
+        }
+        .Pulsing {  animation: entry-animation 2s ease-in-out infinite; color: rgb(246, 43, 20); } @keyframes entry-animation { 0% { opacity: 0%; } 50% { opacity: 100%; } 100% { opacity: 0%; } }
+        .container1 {
+            font-size: 40px;
+            height: 20px;
+            width: 800px;
+            position: absolute;
+            top: 15%;
+            left: 50%;
+          
+          transform: translate(-50%, -50%);
+}
+.hh{
+  color: #fc0202;
+  font-size: 30px;
+}
+.glitch {
+    color: white;
+    font-size: 20px;
+    margin: 0 auto;
+    max-width: 800px; /* Set maximum width */
+    width: fit-content; /* Adjust width to fit content */
+    align-content: center;
+    align-self: center;
+    align-items: center;
+    word-wrap: break-word; /* Wrap long words onto the next line */
+}
+
+    
+    /* Real glitch effect */
+    .glitch {
+      position: relative;
+    right: 30px;
+    }
+    
+    .glitch:after {
+      animation: glitch-animation 2s infinite linear alternate-reverse;
+      background: black;
+      clip: rect( 0, 900px, 0, 0 );
+      color: white;
+      content: attr( data-text );
+      left: 2px;
+      overflow: hidden;
+      position: absolute;
+      text-shadow: -1px 0 red;
+      top: 0;
+    }
+
+    .glitch:before {
+      animation: glitch-animation-2 3s infinite linear alternate-reverse;
+      background: black;
+      clip: rect( 0, 900px, 0, 0 );
+      color: white;
+      content: attr( data-text );
+      left: -2px;
+      overflow: hidden;
+      position: absolute;
+      text-shadow: 1px 0 blue;
+      top: 0;
+    }
+
+    /* Expanded Animations */
+    @keyframes glitch-animation {
+      0% {
+        clip: rect(42px, 9999px, 100px, 0);
+      }
+      5% {
+        clip: rect(12px, 9999px, 59px, 0);
+      }
+      10% {
+        clip: rect(48px, 9999px, 29px, 0);
+      }
+      15.0% {
+        clip: rect(42px, 9999px, 150px, 0);
+      }
+      20% {
+        clip: rect(63px, 9999px, 27px, 0);
+      }
+      25% {
+        clip: rect(34px, 9999px, 98px, 0);
+      }
+      30.0% {
+        clip: rect(86px, 9999px, 73px, 0);
+      }
+      35% {
+        clip: rect(20px, 9999px, 20px, 0);
+      }
+      40% {
+        clip: rect(26px, 9999px, 60px, 0);
+      }
+      45% {
+        clip: rect(25px, 9999px, 66px, 0);
+      }
+      50% {
+        clip: rect(57px, 9999px, 98px, 0);
+      }
+      55.0% {
+        clip: rect(5px, 9999px, 46px, 0);
+      }
+      60.0% {
+        clip: rect(82px, 9999px, 31px, 0);
+      }
+      65% {
+        clip: rect(54px, 9999px, 27px, 0);
+      }
+      70% {
+        clip: rect(28px, 9999px, 99px, 0);
+      }
+      75% {
+        clip: rect(45px, 9999px, 69px, 0);
+      }
+      80% {
+        clip: rect(23px, 9999px, 85px, 0);
+      }
+      85.0% {
+        clip: rect(54px, 9999px, 84px, 0);
+      }
+      90% {
+        clip: rect(45px, 9999px, 47px, 0);
+      }
+      95% {
+        clip: rect(37px, 9999px, 20px, 0);
+      }
+      100% {
+        clip: rect(4px, 9999px, 91px, 0);
+      }
+    }
+
+    @keyframes glitch-animation-2 {
+      0% {
+        clip: rect(65px, 9999px, 100px, 0);
+      }
+      5% {
+        clip: rect(52px, 9999px, 74px, 0);
+      }
+      10% {
+        clip: rect(79px, 9999px, 85px, 0);
+      }
+      15.0% {
+        clip: rect(75px, 9999px, 5px, 0);
+      }
+      20% {
+        clip: rect(67px, 9999px, 61px, 0);
+      }
+      25% {
+        clip: rect(14px, 9999px, 79px, 0);
+      }
+      30.0% {
+        clip: rect(1px, 9999px, 66px, 0);
+      }
+      35% {
+        clip: rect(86px, 9999px, 30px, 0);
+      }
+      40% {
+        clip: rect(23px, 9999px, 98px, 0);
+      }
+      45% {
+        clip: rect(85px, 9999px, 72px, 0);
+      }
+      50% {
+        clip: rect(71px, 9999px, 75px, 0);
+      }
+       55.0% {
+        clip: rect(2px, 9999px, 48px, 0);
+      }
+      60.0% {
+        clip: rect(30px, 9999px, 16px, 0);
+      }
+      65% {
+        clip: rect(59px, 9999px, 50px, 0);
+      }
+      70% {
+        clip: rect(41px, 9999px, 62px, 0);
+      }
+      75% {
+        clip: rect(2px, 9999px, 82px, 0);
+      }
+      80% {
+        clip: rect(47px, 9999px, 73px, 0);
+      }
+      85.0% {
+        clip: rect(3px, 9999px, 27px, 0);
+      }
+      90% {
+        clip: rect(26px, 9999px, 55px, 0);
+      }
+      95% {
+        clip: rect(42px, 9999px, 97px, 0);
+      }
+      100% {
+        clip: rect(38px, 9999px, 49px, 0);
+      }
+    }
+.type {
+  max-width: 25%; /* Adjust the percentage based on your design */
+  margin: 0 auto; /* Center the text horizontally */
+  animation: typing 7s steps(38), blink .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: monospace;
+  font-size: 20px;
+  color: #fc0202;
+}
+
+        @keyframes typing {
+            from {
+                width: 0;
+            }
+            to {
+                width: 100%;
+            }
+        }
+
+        @keyframes blink {
+            50% {
+                border-color: transparent;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="navbar" class="container mt-6 a">
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <CENTER><a class="nav-link" aria-current="page" href="../index.html">GHOSTFREAK</a></CENTER>
+            </li>
+            <li class="nav-item">
+              <CENTER><a class="nav-link active" aria-current="page" href="mapindex.html">QUEST</a></CENTER>
+          </li>
+            
+        </ul>
+    </div><br><br>
+    <div class="random">
+    <div class="container1">
+        <div class="type" data-text="Wanna Know How I Died">Edward's Asylum</div>
+        <div class="glitch" data-text="Within the asylum's grim confines, darkness reigns supreme, shrouding corridors in eternal gloom. Whispers of long-forgotten torments echo through decrepit halls, chilling the soul. Ghostly apparitions drift aimlessly, their anguished wails piercing the stagnant air. Shadows writhe and twist, concealing unspeakable horrors lurking just beyond sight. Madness hangs heavy like a suffocating fog, enveloping all who dare to tread within its cursed walls.">Within the asylum's grim confines, darkness reigns supreme, shrouding corridors in eternal gloom. Whispers of long-forgotten torments echo through decrepit halls, chilling the soul. Ghostly apparitions drift aimlessly, their anguished wails piercing the stagnant air. Shadows writhe and twist, concealing unspeakable horrors lurking just beyond sight. Madness hangs heavy like a suffocating fog, enveloping all who dare to tread within its cursed walls.</div>
+    <br><br><div class="hh" data-text="Find your way through it">Find Your Way Through It...</div>
+      </div></div>
+
+    <div class="image-container">
+        <img src="img/entry.jpg" alt="Hospital Image" usemap="#image-map">
+    </div>
+
+    <map name="image-map">
+        <!-- Define your area elements here -->
+        <area shape="rect" coords="787,346,929,613" alt="Area 1" href="reception.html">
+        
+    </map>
+</body>
+</html>

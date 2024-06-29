@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autoplay Video</title>
+    <style>
+        h1{
+            font-size: 60px;
+        }
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden; /* Hide scroll bars */
+        }
+        #video-background {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: -1000;
+            background-size: cover;
+        }
+        #video-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <video id="video-background" autoplay muted loop>
+        <source src="img/blooood.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div id="video-content">
+        <!-- Optional: Add content on top of the video -->
+        <H2>SHOULN'T HAVE TRUSTED HER</H2>
+        <h1 >You Are So Dead....</h1>
+        <p>LMAOOOOOOOO XD XD XD XD.</p>
+    </div>
+
+    <script>
+        // Auto-play video
+        window.addEventListener('DOMContentLoaded', function() {
+            var video = document.getElementById('video-background');
+            video.play();
+        });
+    </script>
+</body>
+</html>
